@@ -93,7 +93,7 @@ min-height: 100vh;
     right: 0;
     width: 100%;
     z-index: 1;
-    border-bottom: 0.1rem solid var(--light-gray-color);
+    border-bottom: 0.2rem solid var(--light-gray-color);
 
 }
 
@@ -154,6 +154,10 @@ min-height: 100vh;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     min-height: 100vh;
+}
+
+.intro-text-content {
+    line-height: 2.5rem;
 }
 
 .intro-text-content, .intro-img {
@@ -273,6 +277,14 @@ tfoot td, table th {
     gap: var(--gap)
 }
 
+.contact-form .contact-text {
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3rem;
+
+}
+
 .form-grid legend {
     font-style: italic;
     font-size: 1.6rem;
@@ -290,6 +302,7 @@ tfoot td, table th {
 
 .form-group input, .form-group textarea {
     border: none;
+    border-radius: 1rem;
     background: var(--white-color);
     padding: 1.5rem 2rem;
     width: 100%;
@@ -302,18 +315,19 @@ tfoot td, table th {
 
 body .full-width {
     width: 100%;
+    padding: 2.5rem;
     flex: 1 1 100%;
 }
 
 .form-group button {
-    border: 0.5rem solid var(--white-color);
+    border: 0.3rem solid var(--white-color);
+    border-radius: 1rem;
     background: none;
     color: var(--white-color);
     padding: 1rem 1.5rem;
-    font-size: 3rem;
+    font-size: 2rem; 
     cursor: pointer;
     transition: all 300ms ease-in-out;
-
 }   
 
 .form-group button:hover {
@@ -326,16 +340,24 @@ body .full-width {
 }
 
 .footer {
+
     text-align: center;
     font-size: 1.6rem;
 }
+
 .footer a {
     color: #333;
 }
 
+.footer a:hover {
+    background-color: var(--light-gray-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
 .footer p {
     margin: 0;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .close-menu {
